@@ -1,0 +1,50 @@
+Given an integer x, return true if x is a 
+palindrome
+, and false otherwise.
+
+ 
+
+Example 1:
+
+Input: x = 121
+Output: true
+Explanation: 121 reads as 121 from left to right and from right to left.
+Example 2:
+
+Input: x = -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+Example 3:
+
+Input: x = 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+ 
+
+Constraints:
+
+-231 <= x <= 231 - 1
+
+
+------------------Solution Explanation----------------
+We can reverse number by two approches in given Solution
+1)By using string builder.
+-> In method first int x is stored in String builder sb
+->Then we reveres the string using reverse()
+->Compare using the .equals
+Note: String ="a" and StringBuilder ="a"; both are Differencet 
+Because String override equals method but string builder don't override the equals method and uses Object default implementation thats why when your try to comapre using equal for String obj and Stringbuilder Object
+You get different output as per expectection that is False.
+
+
+2)By using the Math operation such as % and / .
+--> Used Formula:
+    Last Digit =x%10; i.e. 123%10 =3 ; 12%10 = 2 ; 1%10= 1;
+    Initially ReverseNumber=0;
+    ReverseNumber =(ReverseNumber * 10)+LastDigit; 
+    ie.Example x =121;
+    ReverseNumber=121;
+    
+     
+
+
