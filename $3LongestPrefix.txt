@@ -1,0 +1,40 @@
+
+14. Longest Common Prefix
+Easy
+Topics
+Companies
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+ 
+
+Example 1:
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+Example 2:
+
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+ 
+
+Constraints:
+
+1 <= strs.length <= 200
+0 <= strs[i].length <= 200
+strs[i] consists of only lowercase English letters if it is non-empty.
+
+
+-------------Solution----------------
+1)Find the smallest string in the array .
+2)find length of that and assign it in variable name as : smallestString and smallestStringSize.
+3)So now maximum for loop can be smallestStringSize.
+4)at each iteration pick character of iteration number and compare it with each element present in array (by its character).
+5)if codnition fail then set flag to fasle break both loop;
+6)if now then append in another string .
+At the End return that string.
+
+
+
